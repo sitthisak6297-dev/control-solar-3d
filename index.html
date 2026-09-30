@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Control Solar 3D</title>
+
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #eeeeee;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      background: #eeeeee;
+    }
+
+    .title {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+
+      background: rgba(0,0,0,0.65);
+      color: white;
+
+      padding: 10px 18px;
+      border-radius: 12px;
+
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">
+    CONTROL SOLAR 3D
+  </div>
+
+  <model-viewer
+    src="./Control_Solar_v17.glb"
+    camera-controls
+    touch-action="pan-y"
+    auto-rotate
+    shadow-intensity="1"
+    exposure="1"
+    environment-image="neutral"
+    interaction-prompt="auto">
+
+  </model-viewer>
+
+</body>
+</html>
